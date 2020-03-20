@@ -2,7 +2,7 @@ FROM registry.access.redhat.com/ubi8/ubi
 
 WORKDIR /root 
 
-ENV MLX=MLNX_OFED_LINUX-5.0-1.0.0.0-rhel8.1-x86_64.tgz
+ENV MLX=MLNX_OFED_LINUX-5.0-1.0.0.0-rhel8.1-x86_64
 
 RUN dnf -y install make gcc wget perl createrepo kernel-devel  pciutils python36-devel ethtool lsof elfutils-libelf-devel rpm-build kernel-rpm-macros python36 tk numactl-libs libmnl tcl binutils kmod procps git autoconf automake libtool 
 
