@@ -17,5 +17,5 @@ RUN tar xf $MLX.tgz
 
 WORKDIR $MLX
 
-RUN ./mlnxofedinstall --upstream-libs --dpdk --with-mft --add-kernel-support; cat  /tmp/MLNX_OFED_LINUX*
+RUN ./mlnxofedinstall --upstream-libs --dpdk --with-mft --add-kernel-support; cat  /tmp/MLNX_OFED_LINUX*/*/*.log
 
