@@ -1,4 +1,4 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.0
+FROM registry.access.redhat.com/ubi8/ubi
 
 WORKDIR /root 
 
@@ -19,5 +19,5 @@ RUN tar xf ${MLX}.tgz
 
 WORKDIR ${MLX}
 
-RUN ./mlnxofedinstall --upstream-libs --dpdk --with-mft --add-kernel-support
+RUN ./mlnxofedinstall --upstream-libs --dpdk --with-mft --add-kernel-support --distro rhel8.0
 
